@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://note-crud-black.vercel.app/api/v1",
+      "url": "https://note-crud-rose.vercel.app/api/v1",
       "description": "Production server"
     }
   ],
@@ -139,6 +139,8 @@
         "properties": {
           "id": { "type": "string", "example": "abc123xyz" },
           "title": { "type": "string", "example": "Project Meeting" },
+          "author": { "type": "string", "example": "John Doe" },
+          "completed": { "type": "boolean", "example": false },
           "content": { "type": "string", "example": "Discussed team roles and deadlines." },
           "createdAt": { "type": "string", "format": "date-time", "example": "2025-07-23T10:00:00.000Z" },
           "updatedAt": { "type": "string", "format": "date-time", "example": "2025-07-23T10:00:00.000Z" }
@@ -149,6 +151,8 @@
         "required": ["title", "content"],
         "properties": {
           "title": { "type": "string", "example": "New Note Title" },
+          "author": { "type": "string", "example": "John Doe" },
+          "completed": { "type": "boolean", "example": false },
           "content": { "type": "string", "example": "This is the note content." }
         }
       }
