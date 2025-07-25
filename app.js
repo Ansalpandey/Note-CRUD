@@ -12,6 +12,12 @@ app.use(cors(
     allowedHeaders: "Content-Type,Authorization",
   }
 ));
+
+app.get("/", (req, res) =>{
+  res.send({
+    message: "Server is working perfectly!"
+  })
+})
 app.use(express.json());
 app.use("/api/v1", notesRoutes);
 
